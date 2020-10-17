@@ -1,0 +1,223 @@
+@import variables
+
+body
+    background: $base-color
+    font-weight: bold
+
+ul
+    padding-top: 30px
+    list-style: none
+    padding-left: 0
+    li
+        margin-bottom: 30px
+.neo-auth__black
+    margin-top: 30px
+    margin-bottom: 30px
+    .neo-btn__black:last-child
+        a
+            color: $second-font-color
+    .neo-btn__black:first-child
+        a
+            color: $main-font-color
+.neo-btn__black
+    text-shadow: none !important
+    width: 100%
+    height: auto
+    display: inline-block
+    color: $font-color
+    text-align: center
+    line-height: 30px
+    font-size: 16px
+    border-radius: 30px
+    background: linear-gradient(145deg, $btn-color-1, $btn-color-2)
+    box-shadow:  $shadow-size-1 $shadow-size-1 $shadow-size-2 $btn-shadow-1, $shadow-size-reversal-1 $shadow-size-reversal-1 $shadow-size-2 $btn-shadow-2
+
+    a
+        color: $font-color
+        line-height: 30px
+        display: inline-block
+        width: 100%
+    &:hover
+        color: $sub-font-color
+        text-decoration: none
+        border-radius: 30px
+        background: linear-gradient(145deg, $btn-color-2, $btn-color-1)
+        box-shadow:  $shadow-size-1 $shadow-size-1 $shadow-size-2 $btn-shadow-1, $shadow-size-reversal-1 $shadow-size-reversal-1 $shadow-size-2 $btn-shadow-2
+        a
+            color: $sub-font-color
+            text-decoration: none
+    &.active
+        border-radius: 30px
+        background: $base-color
+        box-shadow: inset $shadow-size-1 $shadow-size-1 $shadow-size-2 $btn-shadow-1, inset $shadow-size-reversal-1 $shadow-size-reversal-1 $shadow-size-2 $btn-shadow-2
+        a
+            text-shadow: 0 0 3px #ffa638,  0 0 3px #ffffff
+
+.neo-game
+    width: 100%
+    padding-top: 70%
+    height: auto
+    overflow: hidden
+    max-height: 100px
+    margin-bottom: 7px
+    display: inline-block
+    color: $font-color
+    position: relative
+    text-align: center
+    line-height: 30px
+    font-size: 16px
+    border-radius: 20px
+    background: linear-gradient(145deg, $btn-color-1, $btn-color-2)
+    box-shadow:  $shadow-size-1 $shadow-size-1 $shadow-size-2 $btn-shadow-1, $shadow-size-reversal-1 $shadow-size-reversal-1 $shadow-size-2 $btn-shadow-2
+    transition: all 600ms
+    img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        overflow: hidden
+        opacity: 0.9
+        transition: all 500ms
+    a
+        color: $font-color
+        line-height: 30px
+    &:hover
+        color: $sub-font-color
+        text-decoration: none
+        border-radius: 5px
+        background: linear-gradient(145deg, $btn-color-2, $btn-color-1)
+        box-shadow:  $shadow-size-1 $shadow-size-1 $shadow-size-2 $btn-shadow-1, $shadow-size-reversal-1 $shadow-size-reversal-1 $shadow-size-2 $btn-shadow-2
+        a
+            color: $sub-font-color
+            text-decoration: none
+        img
+            opacity: 1
+    &.active
+        border-radius: 30px
+        background: $base-color
+        box-shadow: inset $shadow-size-1 $shadow-size-1 $shadow-size-2 $btn-shadow-1, inset $shadow-size-reversal-1 $shadow-size-reversal-1 $shadow-size-2 $btn-shadow-2
+
+
+.neo-btn-row__black
+    width: 100%
+    margin-top: 30px
+    margin-bottom: 30px
+    height: 30px
+    display: flex
+    color: $font-color
+    text-align: center
+    line-height: 30px
+    font-size: 16px
+    border-radius: 30px
+    background: linear-gradient(145deg, $btn-color-1, $btn-color-2)
+    box-shadow:  $shadow-size-1 $shadow-size-1 $shadow-size-2 $btn-shadow-1, $shadow-size-reversal-1 $shadow-size-reversal-1 $shadow-size-2 $btn-shadow-2
+.neo-btn-row--element
+    flex: 1
+    color: $font-color
+    display: inline-block
+    height: 100%
+    line-height: 30px
+    text-align: center
+    &:hover
+        color: $sub-font-color
+        text-decoration: none
+        background: linear-gradient(145deg, $btn-color-2, $btn-color-1)
+        box-shadow:  $shadow-size-1 $shadow-size-1 $shadow-size-2 $btn-shadow-1, $shadow-size-reversal-1 $shadow-size-reversal-1 $shadow-size-2 $btn-shadow-2
+    &.active
+        background: $base-color
+        box-shadow: inset $shadow-size-1 $shadow-size-1 $shadow-size-2 $btn-shadow-1, inset $shadow-size-reversal-1 $shadow-size-reversal-1 $shadow-size-2 $btn-shadow-2
+        text-shadow: 0 0 3px #ffa638,  0 0 3px #ffffff
+    &:first-child
+        border-radius: 30px 0 0 30px
+    &:last-child
+        border-radius: 0 30px 30px 0
+
+
+
+
+.neo-btn--double
+    width: 200px
+    float: right
+    margin-top: 50px
+    a:first-child
+        border-radius: 30px 30px 0 0
+    a:nth-child(2)
+        border-radius: 0 0 30px 30px
+
+.neo-banner
+    margin-top: 60px
+    width: 100%
+    height: 30vh
+    padding: 30px
+    border-radius: 30px
+    color: whitesmoke
+    text-shadow: 0 0 5px black, 0 0 5px black, 0 0 15px black
+    //background: $base-color
+    box-shadow: $shadow-size-1 $shadow-size-1 $shadow-size-2 $btn-shadow-1, $shadow-size-reversal-1 $shadow-size-reversal-1 $shadow-size-2 $btn-shadow-2
+    &.welcome
+        //background-image: url("https://www.bestcasinosites.net/wp-content/uploads/2019/08/best-music-themed-slots-online.jpg")
+        background-image: url("https://static-games.isoftbet.com/games/dev/custom_assets/neon_reels_isbmvc_custom_background_rdacf8047cf52469cade669eccb1d283c.jpg")
+        background-size: cover
+        h2
+            animation: flicker 3s linear infinite
+            color: #9500eb
+    &.reload
+        background-image: url("https://i.pinimg.com/originals/aa/23/25/aa2325571912807589843798dd6f176d.jpg")
+        background-size: 100%
+.active .neo-btn-inside--group
+    display: block
+
+.neo-btn-inside--group
+    display: none
+    padding: 15px
+    text-align: left
+    a
+        color: $font-color
+        display: inline-block
+        width: 100%
+        line-height: 30px
+        &:hover
+            color: $sub-font-color
+            text-decoration: none
+
+.neo-btn-inside--element
+    margin-bottom: 20px
+    position: relative
+    &:after
+        pointer-events: none
+        content: '>'
+        text-align: center
+        line-height: 21px
+        font-size: 25px
+        padding-left: 2px
+        color: $sub-font-color
+        display: block
+        border-radius: 100%
+        width: 30px
+        height: 30px
+        position: absolute
+        top: 0
+        right: 0
+        background: linear-gradient(145deg, $btn-color-1, $btn-color-2)
+        box-shadow:  $shadow-size-1 $shadow-size-1 $shadow-size-2 $btn-shadow-1, $shadow-size-reversal-1 $shadow-size-reversal-1 $shadow-size-2 $btn-shadow-2
+
+    &:hover
+        a
+            color: #3fa159
+    &.active
+        a
+            color: #3fa159
+        &:after
+            color: #3fa159
+            text-shadow: 0 0 5px #3fa159, 0 0 8px #3fa159
+            border: 1px solid $btn-color-1
+            background: $btn-color-1
+            box-shadow: inset $shadow-size-1 $shadow-size-1 $shadow-size-2 $btn-shadow-1, inset $shadow-size-reversal-1 $shadow-size-reversal-1 $shadow-size-2 $btn-shadow-2
+
+.neo-game--list
+    padding-left: 8px
+    padding-right: 8px
+    .col-2
+        padding-left: 7px
+        padding-right: 7px
